@@ -61,7 +61,7 @@
 }
 
 .blueVariant {
-    background-image: url("blue-background.jpg");
+    background-image: url("/blue-background.jpg");
     object-fit: contain;
     background-size: cover;
     background-position: center;
