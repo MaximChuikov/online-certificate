@@ -1,0 +1,69 @@
+/* A4Container.css */
+.a4-container {
+    /* Резиновые размеры */
+    width: 80vw;
+    max-width: 600px;
+    aspect-ratio: 210 / 297; /* Соотношение A4 */
+
+    /* Внешний вид */
+    box-shadow: 0 1em 3em black;
+    margin: 20px auto;
+    padding: 35% 18%;
+    box-sizing: border-box;
+    line-height: 1.4;
+    position: relative;
+}
+
+/* Контент внутри A4 */
+.a4-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.a4-bottom {
+    position: absolute;
+    bottom: 11%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+    .a4-container {
+        width: 95vw;
+    }
+}
+
+/* Для больших экранов */
+@media (min-width: 1200px) {
+    .a4-container {
+        max-width: 700px;
+    }
+}
+
+/* Стили для печати */
+@media print {
+    .a4-container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        box-shadow: none;
+        aspect-ratio: unset;
+    }
+}
+
+.blueVariant {
+    background-image: url("blue-background.jpg");
+    object-fit: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
