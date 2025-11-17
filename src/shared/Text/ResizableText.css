@@ -18,9 +18,9 @@
 }
 
 .text-h3 {
-    font-size: clamp(1.3rem, 3.5vw, 2rem);
+    font-size: 5.5vw;
     font-weight: bold;
-    margin-bottom: clamp(0.6rem, 2vw, 1.2rem);
+    margin-bottom: 0.5vw;
 }
 
 .text-h4 {
@@ -29,8 +29,8 @@
 }
 
 .text-p {
-    font-size: clamp(1rem, 2.5vw, 1.3rem);
-    margin-bottom: clamp(0.4rem, 1.2vw, 0.8rem);
+    font-size: 4vw;
+    margin-bottom: 0.2vw;
 }
 
 .text-div {
@@ -38,5 +38,5 @@
 }
 
 .text-span {
-    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-size: 4vw;
 }

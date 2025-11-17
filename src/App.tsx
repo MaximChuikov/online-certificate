@@ -5,6 +5,7 @@ import {DecryptedObj} from "./shared/types/index";
 import getPattern from "./patterns/getPattern";
 import {DownloadPDFButton} from "./shared/DownloadPDFButton/DownloadPDFButton";
 import confetti from "canvas-confetti"
+import {ShareButton} from "./shared/ShareButton/ShareButton";
 
 function App() {
 
@@ -97,7 +98,10 @@ function App() {
             <h3>Здесь навсегда будет запечатлено, то что вы сделали для ФОКа, в каком соревновании одержали победу или
                 приняли участие!</h3>
             <br />
-            <DownloadPDFButton contentRef={docRef} />
+            <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'nowrap', justifyContent: 'space-around', gap: '8px'}}>
+                <ShareButton />
+                <DownloadPDFButton contentRef={docRef} />
+            </div>
             <div ref={docRef}>
                 {pattern}
             </div>
