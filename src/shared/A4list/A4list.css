@@ -32,7 +32,6 @@
     bottom: 14%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 /* Для очень маленьких экранов */
@@ -51,6 +50,8 @@
 
 .blueVariant {
     background-image: url("/blue-background.jpg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
+
 }
